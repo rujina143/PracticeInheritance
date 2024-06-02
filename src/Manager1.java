@@ -1,23 +1,18 @@
 
-public class Manager extends Employee {
-    private double bonus;
+public class Manager1 extends Employee1 {
+    private String department;
 
-    public Manager(String name, double baseSalary, double bonus) {
-        super(name, baseSalary);
-        this.bonus = bonus;
+    public Manager1(String name, double salary, String department) {
+        super(name, salary);
+        this.department = department;
     }
 
-    public double getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
+    public String getDepartment() {
+        return department;
     }
 
     @Override
-    public double getSalary() {
-        return super.getSalary() + bonus;
+    public String toString() {
+        return super.toString() + ", Department: " + department;
     }
 }
-

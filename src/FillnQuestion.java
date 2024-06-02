@@ -1,7 +1,7 @@
 
 public class FillnQuestion extends Question {
 
-    public FillInQuestion(String text) {
+    public FillnQuestion(String text) {
         super(text);
     }
 
